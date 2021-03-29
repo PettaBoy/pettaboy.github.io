@@ -1,25 +1,72 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
   <title>PettaBoyStudio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/pettaboystyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="imgsrc/iconpbs.png" type="image/x-icon">
   <style>
-    body {background-color: white;}
-    h1 {font-family: Arial; color: white; text-align: center;}
-    p {font-family: Arial; color: blue;}
-    a:link {color: black;}
-    a:visited {color: rgb(10, 10, 10);}
+    body, h1, h2, h3, h4, h5, h6 {font-family: "Lato", sans-serif;}
+    .bar, h1, button {font-family: "Montserrat", sans-serif;}
   </style>
 </head>
 <body>
-  <div style="background-color:blue;">
-    <h1>PettaBoyStudio</h1>
+  <!-- Navbar -->
+  <div class="top">
+    <div class="bar cyan card left-align large">
+      <a class="bar-item button hide-medium hide-large right padding-large hover-white large red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="javascript:void(0);" class="bar-item button padding-large white">Home</a>
+      <a href="virtualmusickeyboardsite.html" class="bar-item button hide-small padding-large hover-white">VirtualMusicKeyboard</a>
+      <a href="https://www.github.com/PettaBoy" class="bar-item button hide-small padding-large hover-white">Github</a>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navmobile" class="bar-block white hide hide-large hide-medium large">
+      <a href="#" class="bar-item button padding-large">VirtualMusicKeyboard</a>
+      <a href="https://www.github.com/PettaBoy" class="bar-item button padding-large">GitHub</a>
+    </div>
   </div>
-  <div style="background-color:white;">
-    <p>Hello. I am Sishir, and this is my projects page.</p>
-    <p>Don't forget to check out my Github repo:</p>
-    <a href="https://www.github.com/PettaBoy">GitHub</a>
+  <!-- Header -->
+  <header class="container center bg" style="padding:128px 16px; background: url('imgsrc/space.png');">
+    <h1 class="margin jumbo text-white">PettaBoyStudio</h1>
+    <p class="xlarge text-white">Hi, I am Sishir. Welcome to my projects page.</p>
+  </header>
+  <!-- First Project Description -->
+  <div class="row-padding padding-64 container">
+    <div class="content">
+      <div class="twothird">
+        <h1>VirtualMusicKeyboard</h1>
+        <h5 class="padding-32">A music keyboard designed for the computer.</h5>
+      </div>
+      <div class="third center">
+        <img class="padding-64" src="imgsrc/virtualmusickeyboardicon.png">
+      </div>
+    </div>
   </div>
+  <!-- More! -->
+  <div class="container black center opacity padding-64">
+    <h1 class="margin xlarge">More projects on the way!</h1>
+  </div>
+  <!-- Footer -->
+  <footer class="container padding-64 center opacity">  
+    <div class="xlarge padding-32">
+      <i class="fa fa-github hover-opacity"></i>
+    </div>
+  </footer>
+  <!-- Script for navigation bar on small devices. -->
+  <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navmobile");
+    if (x.className.indexOf("show") == -1) {
+      x.className += " show";
+    } else { 
+      x.className = x.className.replace(" show", "");
+    }
+  }
+  </script>
 </body>
 </html>
