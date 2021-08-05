@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VirtualMusicKeyboard</title>
+  <link rel="stylesheet" href="css/pettaboystyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="imgsrc/virtualmusickeyboardicon.png" type="image/x-icon">
+  <style>
+    body, h1, h2, h3, h4, h5, h6, pre {font-family: "Lato", sans-serif;}
+    .bar, h1, button {font-family: "Montserrat", sans-serif;}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="top">
+    <div class="bar cyan card left-align large">
+      <a class="bar-item button hide-medium hide-large right padding-large hover-white large red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="bar-item button padding-large hover-white">Home</a>
+      <a href="javascript:void(0);" class="bar-item button hide-small padding-large white">VirtualMusicKeyboard</a>
+      <a href="https://www.github.com/PettaBoy" class="bar-item button hide-small padding-large hover-white">Github</a>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navmobile" class="bar-block white hide hide-large hide-medium large">
+      <a href="#" class="bar-item button padding-large">VirtualMusicKeyboard</a>
+      <a href="https://www.github.com/PettaBoy" class="bar-item button padding-large">GitHub</a>
+    </div>
+  </div>
+  <!-- Header -->
+  <header class="container center black" style="padding:128px 16px;">
+    <img src="imgsrc/piano.gif">
+    <h1 class="margin jumbo text-white">VirtualMusicKeyboard</h1>
+    <p class="xlarge text-white">A music keyboard designed for the computer.</p>
+  </header>
+  <!-- Project Description -->
+  <div class="row-padding padding-64 container">
+    <div class="content">
+      <p>Are you a music lover? Do you really want to play a music keyboard but cannot afford one?
+      <p>If your answers are yes, then you'll surely like this software!
+      <p>Virtual Music Keyboard, as its name suggests, emulates a real-life music keyboard on a computer system. You can play the
+         keyboard either with your mouse or your computer keyboard.</p>  
+    </div>
+  </div>
+  <!-- More! -->
+  <div class="container black center opacity padding-64">
+    <h1 class="margin xlarge">Download here!</h1>
+  </div>
+  <!-- Footer -->
+  <footer class="container padding-64 center opacity">  
+    <div class="xlarge padding-32">
+      <i class="fa fa-github hover-opacity"></i>
+    </div>
+  </footer>
+  <!-- Script for navigation bar on small devices. -->
+  <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navmobile");
+    if (x.className.indexOf("show") == -1) {
+      x.className += " show";
+    } else { 
+      x.className = x.className.replace(" show", "");
+    }
+  }
+  </script>
+</body>
+</html>
