@@ -15,20 +15,6 @@
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <div class="top">
-    <div class="bar cyan card left-align large">
-      <a class="bar-item button hide-medium hide-large right padding-large hover-white large red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="javascript:void(0);" class="bar-item button padding-large white">Home</a>
-      <a href="virtualmusickeyboardsite.html" class="bar-item button hide-small padding-large hover-white">VirtualMusicKeyboard</a>
-      <a href="https://www.github.com/PettaBoy" class="bar-item button hide-small padding-large hover-white">Github</a>
-    </div>
-    <!-- Navbar on small screens -->
-    <div id="navmobile" class="bar-block white hide hide-large hide-medium large">
-      <a href="#" class="bar-item button padding-large">VirtualMusicKeyboard</a>
-      <a href="https://www.github.com/PettaBoy" class="bar-item button padding-large">GitHub</a>
-    </div>
-  </div>
   <!-- Header -->
   <header class="container center bg" style="padding:128px 16px; background: url('imgsrc/space.png');">
     <h1 class="margin jumbo text-white">PettaBoyStudio</h1>
@@ -38,7 +24,7 @@
   <div class="row-padding padding-64 container">
     <div class="content">
       <div class="twothird">
-        <h1>VirtualMusicKeyboard</h1>
+        <h1><a href=virtualmusickeyboardsite.html>VirtualMusicKeyboard</a></h1>
         <h5 class="padding-32">A music keyboard designed for the computer.</h5>
       </div>
       <div class="third center">
@@ -53,20 +39,8 @@
   <!-- Footer -->
   <footer class="container padding-64 center opacity">  
     <div class="xlarge padding-32">
-      <i class="fa fa-github hover-opacity"></i>
+      <a href="https:/www.github.com/PettaBoy"><i class="fa fa-github hover-opacity"></i></a>
     </div>
   </footer>
-  <!-- Script for navigation bar on small devices. -->
-  <script>
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function myFunction() {
-    var x = document.getElementById("navmobile");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else { 
-      x.className = x.className.replace(" show", "");
-    }
-  }
-  </script>
 </body>
 </html>

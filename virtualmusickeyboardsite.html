@@ -15,20 +15,6 @@
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <div class="top">
-    <div class="bar cyan card left-align large">
-      <a class="bar-item button hide-medium hide-large right padding-large hover-white large red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="bar-item button padding-large hover-white">Home</a>
-      <a href="javascript:void(0);" class="bar-item button hide-small padding-large white">VirtualMusicKeyboard</a>
-      <a href="https://www.github.com/PettaBoy" class="bar-item button hide-small padding-large hover-white">Github</a>
-    </div>
-    <!-- Navbar on small screens -->
-    <div id="navmobile" class="bar-block white hide hide-large hide-medium large">
-      <a href="#" class="bar-item button padding-large">VirtualMusicKeyboard</a>
-      <a href="https://www.github.com/PettaBoy" class="bar-item button padding-large">GitHub</a>
-    </div>
-  </div>
   <!-- Header -->
   <header class="container center black" style="padding:128px 16px;">
     <img src="imgsrc/piano.gif">
@@ -46,25 +32,16 @@
   </div>
   <!-- More! -->
   <div class="container black center opacity padding-64">
-    <h1 class="margin xlarge">Download here!</h1>
+    <a href="virtualmusickeyboard/virtualmusickeyboarddownload.html"><h1 class="margin xlarge">Download here!</h1></a>
   </div>
+  <div class="container white center opacity padding-64">
+    <a href="https:/www.github.com/PettaBoy/VirtualMusicKeyboard">Source code available here!</a>
   <!-- Footer -->
   <footer class="container padding-64 center opacity">  
     <div class="xlarge padding-32">
-      <i class="fa fa-github hover-opacity"></i>
+      <a href="https:/www.github.com/PettaBoy/VirtualMusicKeyboard"><i class="fa fa-github hover-opacity"></i></a>
+      <a href="index.html"><i class="fa fa-home hover-opacity></i></a>
     </div>
   </footer>
-  <!-- Script for navigation bar on small devices. -->
-  <script>
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function myFunction() {
-    var x = document.getElementById("navmobile");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else { 
-      x.className = x.className.replace(" show", "");
-    }
-  }
-  </script>
 </body>
 </html>
