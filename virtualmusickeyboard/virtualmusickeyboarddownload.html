@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VirtualMusicKeyboardDownload</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/pettaboystyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="../imgsrc/virtualmusickeyboardicon.png" type="image/x-icon">
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size: 16px;}
+    img {margin-bottom: -8px;}
+    a {text-decoration: none;}
+  </style>
+</head>
+<body class="content black" style="max-width:1500px;">
+<!-- Navbar -->
+  <div class="top">
+    <div class="bar cyan card left-align large">
+      <a class="bar-item button hide-medium hide-large right padding-large hover-white large red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="../index.html" class="bar-item button padding-large hover-white">Home</a>
+      <a href="https://www.github.com/PettaBoy" class="bar-item button hide-small padding-large hover-white">Github</a>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navmobile" class="bar-block white hide hide-large hide-medium large">
+      <a href="../index.html" class="bar-item button padding-large">Home</a>
+      <a href="https://www.github.com/PettaBoy" class="bar-item button padding-large">GitHub</a>
+    </div>
+  </div>
+<!-- The App Section -->
+<div class="padding-64 white">
+  <div class="row-padding">
+    <div class="col l8 m6">
+      <h1 class="jumbo"><b>VirtualMusicKeyboard</b></h1>
+      <p>Virtual Music Keyboard, as its name suggests, emulates a  real-life music keyboard on a computer system. You can play
+        the keyboard either with your mouse or your computer keyboard.</p>
+      <p>Download it for your platform:.</p>
+      <button class="button light-grey padding-large section hide-small" onclick="document.getElementById('download-32').style.display='block'">
+        <i class="fa fa-download"></i> Download 32-bit
+      </button>
+      <button class="button light-grey padding-large section hide-small" onclick="document.getElementById('download-64').style.display='block'">
+        <i class="fa fa-download"></i> Download 64-bit
+      </button>
+      <p>Available for <i class="fa fa-windows xlarge text-blue"></i></p>
+    </div>
+    <div class="col l4 m6">
+      <img src="../imgsrc/virtualmusickeyboardicon.png" class="image right hide-small" width="150" height="150">
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="download-32" class="modal animate-opacity">
+  <div class="modal-content" style="padding:32px">
+    <div class="container white">
+      <i onclick="document.getElementById('download-32').style.display='none'" class="fa fa-remove xlarge button transparent right xlarge"></i>
+      <h2 class="wide">DOWNLOAD</h2>
+      <p>Confirm download?</p>
+      <i class="fa fa-windows large"></i>
+      <a href="VirtualMusicKeyboard32.zip" download><button type="button" class="button block padding-large red margin-bottom" onclick="document.getElementById('download-32').style.display='none'">Download 32-bit</button></a>
+    </div>
+  </div>
+</div>
+<div id="download-64" class="modal animate-opacity">
+  <div class="modal-content" style="padding:32px">
+    <div class="container white">
+      <i onclick="document.getElementById('download-64').style.display='none'" class="fa fa-remove xlarge button transparent right xlarge"></i>
+      <h2 class="wide">DOWNLOAD</h2>
+      <p>Confirm download?</p>
+      <i class="fa fa-windows large"></i>
+      <a href="VirtualMusicKeyboard32.zip" download><button type="button" class="button block padding-large red margin-bottom" onclick="document.getElementById('download-64').style.display='none'">Download 64-bit</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container padding-32 light-grey center xlarge">
+  <div class="section">
+    <a href="https:/www.github.com/PettaBoy/VirtualMusicKeyboard"><i class="fa fa-github hover-opacity"></i></a>
+  </div>
+
+</body>
+</html>
