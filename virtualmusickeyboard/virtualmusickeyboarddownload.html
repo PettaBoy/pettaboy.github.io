@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
   <title>VirtualMusicKeyboardDownload</title>
   <meta charset="UTF-8">
@@ -16,7 +16,7 @@
   </style>
 </head>
 <body class="content black" style="max-width:1500px;">
-<!-- Navbar -->
+  <!-- Navbar -->
   <div class="top">
     <div class="bar cyan card left-align large">
       <a class="bar-item button hide-medium hide-large right padding-large hover-white large red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -29,57 +29,75 @@
       <a href="https://www.github.com/PettaBoy" class="bar-item button padding-large">GitHub</a>
     </div>
   </div>
-<!-- The App Section -->
-<div class="padding-64 white">
-  <div class="row-padding">
-    <div class="col l8 m6">
-      <h1 class="jumbo"><b>VirtualMusicKeyboard</b></h1>
-      <p>Virtual Music Keyboard, as its name suggests, emulates a  real-life music keyboard on a computer system. You can play
-        the keyboard either with your mouse or your computer keyboard.</p>
-      <p>Download it for your platform:.</p>
-      <button class="button light-grey padding-large section hide-small" onclick="document.getElementById('download-32').style.display='block'">
-        <i class="fa fa-download"></i> Download 32-bit
-      </button>
-      <button class="button light-grey padding-large section hide-small" onclick="document.getElementById('download-64').style.display='block'">
-        <i class="fa fa-download"></i> Download 64-bit
-      </button>
-      <p>Available for <i class="fa fa-windows xlarge text-blue"></i></p>
-    </div>
-    <div class="col l4 m6">
-      <img src="../imgsrc/virtualmusickeyboardicon.png" class="image right hide-small" width="150" height="150">
+  <!-- The App Section -->
+  <div class="padding-64 white">
+    <div class="row-padding">
+      <div class="col l8 m6">
+        <h1 class="jumbo"><b>VirtualMusicKeyboard</b></h1>
+        <p>Virtual Music Keyboard, as its name suggests, emulates a  real-life music keyboard on a computer system. You can play
+          the keyboard either with your mouse or your computer keyboard.</p>
+        <p>Download it for your platform:</p>
+        <button class="button light-grey padding-large section hide-small" onclick="document.getElementById('download-32').style.display='block'">
+          <i class="fa fa-download"></i> Download 32-bit
+        </button>
+        <button class="button light-grey padding-large section hide-small" onclick="document.getElementById('download-64').style.display='block'">
+          <i class="fa fa-download"></i> Download 64-bit
+        </button>
+        <p>Available for <i class="fa fa-windows xlarge text-blue"></i></p>
+      </div>
+      <div class="col l4 m6">
+        <img src="../imgsrc/virtualmusickeyboardicon.png" class="image right hide-small" width="150" height="150">
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Modal -->
-<div id="download-32" class="modal animate-opacity">
-  <div class="modal-content" style="padding:32px">
-    <div class="container white">
-      <i onclick="document.getElementById('download-32').style.display='none'" class="fa fa-remove xlarge button transparent right xlarge"></i>
-      <h2 class="wide">DOWNLOAD</h2>
-      <p>Confirm download?</p>
-      <i class="fa fa-windows large"></i>
-      <a href="VirtualMusicKeyboard32.zip" download><button type="button" class="button block padding-large red margin-bottom" onclick="document.getElementById('download-32').style.display='none'">Download 32-bit</button></a>
+  <!-- Modal -->
+  <div id="download-32" class="modal animate-opacity">
+    <div class="modal-content" style="padding:32px">
+      <div class="container white">
+        <i onclick="document.getElementById('download-32').style.display='none'" class="fa fa-remove xlarge button transparent right xlarge"></i>
+        <h2 class="wide">DOWNLOAD</h2>
+        <p>Confirm download?</p>
+        <i class="fa fa-windows large"></i>
+        <a href="VirtualMusicKeyboard32.zip" download><button type="button" class="button block padding-large red margin-bottom" onclick="document.getElementById('download-32').style.display='none'">Download 32-bit</button></a>
+      </div>
     </div>
   </div>
-</div>
-<div id="download-64" class="modal animate-opacity">
-  <div class="modal-content" style="padding:32px">
-    <div class="container white">
-      <i onclick="document.getElementById('download-64').style.display='none'" class="fa fa-remove xlarge button transparent right xlarge"></i>
-      <h2 class="wide">DOWNLOAD</h2>
-      <p>Confirm download?</p>
-      <i class="fa fa-windows large"></i>
-      <a href="VirtualMusicKeyboard32.zip" download><button type="button" class="button block padding-large red margin-bottom" onclick="document.getElementById('download-64').style.display='none'">Download 64-bit</button></a>
+  <div id="download-64" class="modal animate-opacity">
+    <div class="modal-content" style="padding:32px">
+      <div class="container white">
+        <i onclick="document.getElementById('download-64').style.display='none'" class="fa fa-remove xlarge button transparent right xlarge"></i>
+        <h2 class="wide">DOWNLOAD</h2>
+        <p>Confirm download?</p>
+        <i class="fa fa-windows large"></i>
+        <a href="VirtualMusicKeyboard32.zip" download><button type="button" class="button block padding-large red margin-bottom" onclick="document.getElementById('download-64').style.display='none'">Download 64-bit</button></a>
+      </div>
     </div>
   </div>
-</div>
-
-<!-- Footer -->
-<footer class="container padding-32 light-grey center xlarge">
-  <div class="section">
-    <a href="https:/www.github.com/PettaBoy/VirtualMusicKeyboard"><i class="fa fa-github hover-opacity"></i></a>
+  <!-- Requirements -->
+  <div class="row-padding padding-64 container">
+    <div class="content">
+      <h3>Requirements:</h3>
+      <ul>
+        <li>Windows 7 or above</li>
+        <li>A valid SoundFont(ends with .sf2) file
+            (an SF2 file comes preloaded with this app, however you can replace it with a new one)</li>
+        <li><a href="https://www.fluidsynth.org/" style="color:yellow;">FluidSynth</a> or any of its patched versions
+            (preferably <a href="https://sourceforge.net/projects/qsynth/" style="color:yellow;">QSynth</a>) (please check
+             whether the version you're downloading is for your system type, you can check it under system information)<br>
+            (and also don't forget to add the folder where FluidSynth is present to Path environment variable,
+             you can click on 
+             <a href="https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/" style="color:yellow;">this link</a>
+             if you don't know how to do it)</li>
+      <ul>
+    </div>
   </div>
+  <!-- Footer -->
+  <footer class="container padding-32 light-grey center xlarge">
+    <div class="section">
+      <a href="https:/www.github.com/PettaBoy/VirtualMusicKeyboard"><i class="fa fa-github hover-opacity"></i></a>
+    </div>
+  </footer>
 
 </body>
 </html>
