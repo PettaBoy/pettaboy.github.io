@@ -12,10 +12,16 @@
   <style>
     body, h1, h2, h3, h4, h5, h6, pre {font-family: "Lato", sans-serif;}
     .bar, h1, button {font-family: "Montserrat", sans-serif;}
+    .top {position: absolute}
   </style>
 </head>
 <body>
   <!-- Header -->
+  <div class="top">
+    <div class="bar card left-align large">
+      <a href="./index.html" class="bar-item text-white button padding-large hover-white">Home</a>
+    </div>
+  </div>
   <header class="container center black" style="padding:128px 16px;">
     <img src="imgsrc/piano.gif">
     <h1 class="margin jumbo text-white">VirtualMusicKeyboard</h1>
@@ -27,21 +33,23 @@
       <p>Are you a music lover? Do you really want to play a music keyboard but cannot afford one?
       <p>If your answers are yes, then you'll surely like this software!
       <p>Virtual Music Keyboard, as its name suggests, emulates a real-life music keyboard on a computer system. You can play the
-         keyboard either with your mouse or your computer keyboard.</p>  
+        keyboard either with your mouse or your computer keyboard.
+      </p>  
     </div>
   </div>
   <!-- More! -->
-  <div class="container black center opacity padding-64">
-    <a href="virtualmusickeyboard/virtualmusickeyboarddownload.html"><h1 class="margin xlarge">Download here!</h1></a>
-  </div>
-  <div class="container white center opacity padding-64">
-    <a href="https://www.github.com/PettaBoy/VirtualMusicKeyboard">Source code available here!</a>
+  <div class="container black center padding-64">
+    <a href="virtualmusickeyboard/virtualmusickeyboarddownload.html" target="__blank"><h1 class="margin xlarge">Download here!</h1></a>
+    <br>
+    <a href="https://www.github.com/PettaBoy/VirtualMusicKeyboard" target="__blank">Source code available here!</a>
+    <br>
+    <a href="virtualmusickeyboard/README.txt">Important README</a>
   </div>
   <!-- Footer -->
   <footer class="container padding-64 center opacity">  
     <div class="xlarge padding-32">
       <a href="https://www.github.com/PettaBoy"><i class="fa fa-github hover-opacity"></i></a>
-      <a href="index.html"><i class="fa fa-home hover-opacity></i></a>
+      <p class="medium"><i class="fa fa-copyright hover-opacity"></i>2021, Sishir Sivakumar.</p>
     </div>
   </footer>
 </body>
