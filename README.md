@@ -1,3 +1,4 @@
 # pettaboy.github.io
 
-Under construction. See you soon.
+Launched today!\
+My first project is already uploaded on the website. Don't forget to check it out!
