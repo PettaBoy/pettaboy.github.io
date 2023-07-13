@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.desc {
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}

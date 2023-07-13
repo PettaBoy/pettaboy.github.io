@@ -1,0 +1,35 @@
+.container {
+    padding: 0.01em 16px;
+}
+
+.container:after, .container:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.center {
+    text-align: center!important;
+}
+
+.padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+
+.padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.xlarge {
+    font-size: 24px!important
+}
+
+.medium {
+    font-size: 15px!important
+}

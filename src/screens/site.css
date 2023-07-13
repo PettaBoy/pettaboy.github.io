@@ -1,0 +1,127 @@
+html, body {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html {
+    overflow-x: hidden
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+form {
+    display: inline-block;
+}
+
+.container {
+    padding: 128px 0px;
+}
+
+.container:after, .container:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.center {
+    text-align: center !important;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text-white {
+    color: white;
+}
+
+.light-grey {
+    color: #000!important;
+    background-color: #f0f0f0!important;
+}
+
+.margin {
+    margin: 16px!important
+}
+
+.margin-bottom {
+    margin-bottom: 16px!important
+}
+
+.jumbo {
+    font-size: 64px!important
+}
+
+.xlarge {
+    font-size: 24px!important
+}
+
+.padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+
+.padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px
+}
+
+.half, .third, .twothird {
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 600px)
+{   .half {
+        width: 49.99999%
+    }
+
+    .twothird {
+        width: 66.66666%
+    }
+
+    .third {
+        width: 33.33333%
+    }
+}
+
+.row-padding, .row-padding>.half, .row-padding>.third, .row-padding>.twothird{
+    padding: 0 8px
+}
+
+.black {
+    color: #f1f1f1!important;
+    background-color: #000000!important;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.medium {
+    font-size: 15px!important
+}
+
+.top {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+.canvas {
+    width: 100%;
+}
