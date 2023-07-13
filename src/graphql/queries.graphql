@@ -1,0 +1,23 @@
+query Lyrics{
+    getLyrics{
+        name
+        title
+        album
+        language
+        year
+        description
+        cover
+    }
+}
+
+query LyricsByName($name: String!){
+    getLyricsByName(name: $name){
+        title
+        album
+        language
+        year
+        description
+        cover
+        content
+    }
+}
